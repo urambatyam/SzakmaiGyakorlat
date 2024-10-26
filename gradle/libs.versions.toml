@@ -1,0 +1,43 @@
+[versions]
+androidx-lifecycle = "2.8.2"
+compose-plugin = "1.6.11"
+junit = "4.13.2"
+kotlin = "2.0.21"
+kotlinx-coroutines = "1.9.0"
+voyager = "1.1.0-beta03"
+androidx-data-store = "1.1.1"
+logback = "1.2.11"
+room = "2.7.0-alpha01"
+ksp = "2.0.21-1.0.25"
+sqlite = "2.4.0"
+koalaPlot = "0.6.3"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+#Voyeger Navigation
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
+#Datastore Preference
+androidx-data-store-core = { module = "androidx.datastore:datastore-preferences-core", version.ref = "androidx-data-store" }
+#logging
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+#ROOM local database
+room-runtime = {module = "androidx.room:room-runtime", version.ref = "room"}
+room-compiler = {module = "androidx.room:room-compiler", version.ref = "room"}
+sqlite-bundled = {module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite"}
+#Koala Plot
+koala-plot = {module = "io.github.koalaplot:koalaplot-core", version.ref="koalaPlot"}
+
+
+[plugins]
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+#ROOM local database
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+room = {id = "androidx.room", version.ref = "room"}
